@@ -10,7 +10,7 @@
 $headerColor: rgb(41,47,54);
 $seaColor: rgb(35, 183, 164);
 $navColor: rgb(164, 174, 173);
-$altBgColor: rgb(58,69,77);
+$darkColor: rgb(58,69,77);
 $detailColor: rgb(234,238,241);
 
 $font1: "OpenSans";
@@ -148,15 +148,54 @@ $font3: "Socialico";
     min-height: 60vh;
     margin-left: 9%;
     margin-right: 9%;
+    .wrap {
+        position: relative;
+        &:hover {
+            .image {
+                opacity: 0.5;
+            }
+            .middle {
+                opacity: 1;
+            }
+            .caption {
+                background-color: $darkColor;
+                .name {
+                    color: white;
+                }
+                .job {
+                    color: white;
+                }
+            }
+        }
+    }
     img {
         width: 100%;
+    }
+    .image {
         transition: .5s ease;
         backface-visibility: hidden;
         opacity: 1;
-        &:hover {
-            opacity: 0.3;
-        }
     }
+    .middle {
+        transition: .5s ease;
+        opacity: 0;
+        position: absolute;
+        top: 40%;
+        left: 45%;
+        transform: translate(-40%, -45%);
+        text-align: center;
+        .text {
+            background-color: $darkColor;
+            font-size: 26px;
+            width: 120px;
+            a {
+                font-family: $font3;
+                text-decoration: none;
+                color: white;
+                padding: 8px;
+            }
+          }
+      }
     .caption {
         width: 100%;
         height: 10vh;
@@ -166,13 +205,16 @@ $font3: "Socialico";
         flex-direction: column;
         justify-content: center;
         padding-left: 7%;
+        transition: .5s ease;
         .name {
             font-family: $font2, sans-serif;
             text-transform: uppercase;
+            transition: .5s ease;
         }
         .job {
             font-family: $font2, sans-serif;
             color: $navColor;
+            transition: .5s ease;
         }
     }
 }
