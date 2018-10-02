@@ -11,7 +11,7 @@ $headerColor: rgb(41,47,54);
 $seaColor: rgb(35, 183, 164);
 $navColor: rgb(164, 174, 173);
 $altBgColor: rgb(58,69,77);
-$inputBgColor: rgb(234,238,241);
+$detailColor: rgb(234,238,241);
 
 $font1: "OpenSans";
 $font2: "Quattrocento Sans";
@@ -129,9 +129,52 @@ $font3: "Socialico";
     }
 }
 
-.team {
-    height: 80vh;
-    background-color: aqua;
+.teamHeader {
+    min-height: 20vh;
+    position: relative;
+    h2 {
+        font-family: $font2, sans-serif;
+        text-transform: uppercase;
+        letter-spacing: -1.5px;
+        border-left: 10px solid $detailColor;
+        padding-left: 1.2vw;
+        position: absolute;
+        top: 33%;
+        left: 9%;
+    }
+}
+
+.teamMembers {
+    min-height: 60vh;
+    margin-left: 9%;
+    margin-right: 9%;
+    img {
+        width: 100%;
+        transition: .5s ease;
+        backface-visibility: hidden;
+        opacity: 1;
+        &:hover {
+            opacity: 0.3;
+        }
+    }
+    .caption {
+        width: 100%;
+        height: 10vh;
+        background-color: $detailColor;
+        font-size: 0.9rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 7%;
+        .name {
+            font-family: $font2, sans-serif;
+            text-transform: uppercase;
+        }
+        .job {
+            font-family: $font2, sans-serif;
+            color: $navColor;
+        }
+    }
 }
 
 .work {
