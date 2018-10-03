@@ -89,7 +89,7 @@ $font3: "Socialico";
 }
 
 .banner {
-    height: 90vh;
+    min-height: 90vh;
     background-image: url("../images/slider.png");
     background-repeat: no-repeat;
     background-size: cover;
