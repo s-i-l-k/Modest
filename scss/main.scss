@@ -355,9 +355,81 @@ $font3: "Socialico";
     }
 }
 
-.contact {
+#contact {
     min-height: 115vh;
-    background-color: coral;
+    position: relative;
+    .map {
+        width: 100vw;
+        height: 45vh;
+        background-image: url(../images/map.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 45%;
+        margin-left: -30px;
+    }
+    .contactInfo {
+        width: 100%;
+        padding-left: 12%;
+        h3 {
+            text-transform: uppercase;
+            padding-top: 8vh;
+            padding-bottom: 4vh;
+            font-family: $font2, sans-serif;
+            font-size: 17px;
+        }
+        p {
+            color: $navColor;
+            font-family: $font2, sans-serif;
+            font-size: 17px;
+        }
+    }
+    .contactForm {
+        position: absolute;
+        top: -15vh;
+        background: white;
+        padding-left: 30px;
+        padding-top: 20px;
+        input {
+            border-radius: 3px;
+            border: none;
+            background: $detailColor;
+            height: 40px;
+            width: 220px;
+            margin-bottom: 20px;
+            margin-right: 22px;
+          }
+          textarea {
+            border-radius: 3px;
+            border: none;
+            background: $detailColor;
+            height: 160px;
+            width: 465px;
+            resize: none;
+            }
+           label {
+            color: #8d8f92;
+            font-family: $font2, sans-serif;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+          }
+          button {
+            width: 125px;
+            height: 40px;
+            border: 2px solid $seaColor;
+            border-radius: 5px;
+            color: white;
+            background-color: $seaColor;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: -1px;
+            cursor: pointer;
+            &:hover {
+                background-color: $darkColor;
+                border: 1px solid $darkColor;
+            }
+          }
+      }
 }
 
 #footer {
