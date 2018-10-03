@@ -356,11 +356,32 @@ $font3: "Socialico";
 }
 
 .contact {
-    height: 95vh;
+    min-height: 115vh;
     background-color: coral;
 }
 
-.footer {
-    height: 12vh;
-    background-color: green;
+#footer {
+    min-height: 12vh;
+    background-color: $darkColor;
+    color: white;
+    padding-left:  9%;
+    padding-right: 9%;
+    .copyright {
+        font-size: 14px;
+        font-family: $font2;
+        line-height: 12vh;
+        @media (max-width: 575px) {
+            text-align: center;
+        }
+    }
+    .socials {
+        font-size: 30px;
+        font-family: $font3;
+        letter-spacing: 7px;
+        text-align: right;
+        line-height: 12vh;
+        @media (max-width: 575px) {
+            text-align: center;
+        }
+    }
 }
