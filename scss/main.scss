@@ -402,6 +402,10 @@ $font3: "Socialico";
             width: 220px;
             margin-bottom: 20px;
             margin-right: 22px;
+            font-size: 14px;
+            &:focus {
+                border: 1px solid $darkColor;
+            }
           }
           .message {
               width: 100%;
@@ -412,7 +416,11 @@ $font3: "Socialico";
                 background: $detailColor;
                 height: 160px;
                 width: 100%;
+                font-size: 14px;
                 resize: none;
+                &:focus {
+                    border: 1px solid $darkColor;
+                }
             }
           }
            label {
