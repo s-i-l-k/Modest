@@ -389,6 +389,11 @@ $font3: "Socialico";
         background: white;
         padding-left: 30px;
         padding-top: 20px;
+        @media (max-width: 991px) {
+            position: static;
+            padding-left: 10%;
+            padding-bottom: 5%;
+        }
         input {
             border-radius: 3px;
             border: none;
@@ -398,16 +403,20 @@ $font3: "Socialico";
             margin-bottom: 20px;
             margin-right: 22px;
           }
-          textarea {
-            border-radius: 3px;
-            border: none;
-            background: $detailColor;
-            height: 160px;
-            width: 465px;
-            resize: none;
+          .message {
+              width: 100%;
+              padding-right: 22px;
+              textarea {
+                border-radius: 3px;
+                border: none;
+                background: $detailColor;
+                height: 160px;
+                width: 100%;
+                resize: none;
             }
+          }
            label {
-            color: #8d8f92;
+            color: $navColor;
             font-family: $font2, sans-serif;
             font-size: 0.8rem;
             text-transform: uppercase;
@@ -447,13 +456,17 @@ $font3: "Socialico";
         }
     }
     .socials {
-        font-size: 30px;
-        font-family: $font3;
-        letter-spacing: 7px;
-        text-align: right;
-        line-height: 12vh;
         @media (max-width: 575px) {
             text-align: center;
+        }
+        a {
+            font-size: 30px;
+            font-family: $font3;
+            letter-spacing: 7px;
+            text-align: right;
+            line-height: 12vh;
+            text-decoration: none;
+            color: white;
         }
     }
 }
