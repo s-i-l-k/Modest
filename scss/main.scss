@@ -110,6 +110,7 @@ $font3: "Socialico";
             padding-top: 1vh;
             padding-bottom: 2vh;
             color: $navColor;
+            font-family: $font1, sans-serif;
         }
         button {
             width: 115px;
@@ -140,7 +141,7 @@ $font3: "Socialico";
         border-left: 10px solid $detailColor;
         padding-left: 1.2vw;
         position: absolute;
-        top: 33%;
+        top: 35%;
         left: 10%;
     }
 }
@@ -234,7 +235,7 @@ $font3: "Socialico";
             border-left: 10px solid $navColor;
             padding-left: 1.2vw;
             position: absolute;
-            top: 33%;
+            top: 35%;
             left: 10%;
         }   
     }
@@ -317,9 +318,41 @@ $font3: "Socialico";
     } 
 }
 
-.services {
-    height: 120vh;
-    background-color: cadetblue;
+#services {
+    min-height: 100vh;
+    .wedo {
+        margin-left: 9%;
+        margin-right: 9%;
+        .wrap {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 5vh;
+            margin-bottom: 6vh;
+            .description {
+                padding-top: 12px;
+                font-size: 15px;
+                line-height: 23px;
+                .title {
+                    text-align: center;
+                    text-transform: uppercase;
+                    padding-top: 8px;
+                    padding-bottom: 8px;
+                    letter-spacing: -1px;
+                    font-family: $font2, sans-serif;
+                }
+                .more {
+                    color: $navColor;
+                    text-align: center;
+                    padding-top: 8px;
+                    font-family: $font2, sans-serif;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
 }
 
 .contact {
