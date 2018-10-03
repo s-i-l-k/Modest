@@ -77,12 +77,12 @@ $font3: "Socialico";
                     border-radius: 5px;
                     padding: 5px;
                 }
-                &:active {
-                    color: $navColor;
-                    border: 2px solid $navColor;
-                    border-radius: 5px;
-                    padding: 5px;
-                }
+            }
+            .active {
+                color: $navColor;
+                border: 2px solid $navColor;
+                border-radius: 5px;
+                padding: 5px;
             }
         }
     }
@@ -242,6 +242,9 @@ $font3: "Socialico";
     .workPlaces {
         margin-left: 9%;
         margin-right: 9%;
+        .hidden {
+            display: none;
+        }
         .wrap {
             position: relative;
             &:hover {
