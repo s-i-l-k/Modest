@@ -113,7 +113,7 @@ $font3: "Socialico";
         }
         button {
             width: 115px;
-            height: 45px;
+            height: 40px;
             border: 2px solid white;
             border-radius: 5px;
             color: white;
@@ -121,6 +121,7 @@ $font3: "Socialico";
             text-transform: uppercase;
             font-size: 0.8rem;
             letter-spacing: -1px;
+            cursor: pointer;
             &:hover {
                 background-color: $seaColor;
                 border: 1px solid $seaColor;
@@ -158,7 +159,7 @@ $font3: "Socialico";
                 opacity: 1;
             }
             .caption {
-                background-color: $darkColor;
+                background-color: $headerColor;
                 .name {
                     color: white;
                 }
@@ -240,9 +241,55 @@ $font3: "Socialico";
     .workPlaces {
         margin-left: 9%;
         margin-right: 9%;
+        .wrap {
+            position: relative;
+            &:hover {
+                .pic {
+                    background-color: lightgrey;
+                    opacity: 0.6;
+                }
+                .plus {
+                    opacity: 1;
+                }
+                .desc {
+                    opacity: 1;
+                }
+            }
+        }
         img {
             width: 100%;
             margin-bottom: 15px;
+        }
+        .pic {
+            transition: .5s ease;
+            backface-visibility: hidden;
+            opacity: 1;
+        }
+        .plus {
+            color: white;
+            font-size: 50px;
+            text-align: center;
+            opacity: 0;
+            position: absolute;
+            top: 23%;
+            left: 46%;
+            font-family: $font2, sans-serif;
+            transition: .5s ease;
+        }
+        .desc {
+            width: 100%;
+            height: 7vh;
+            background-color: $headerColor;
+            color: white;
+            opacity: 0;
+            position: absolute;
+            bottom: 0;
+            padding-top: 14px;
+            font-size: 0.9rem;
+            font-family: $font2, sans-serif;
+            text-transform: uppercase;
+            padding-left: 7%;
+            transition: .5s ease;
         }
     }
     .showMore {
@@ -251,6 +298,22 @@ $font3: "Socialico";
         align-items: center;
         padding-top: 5vh;
         padding-bottom: 5vh;
+        button {
+            width: 125px;
+            height: 40px;
+            border: 2px solid white;
+            border-radius: 5px;
+            color: white;
+            background-color: transparent;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            letter-spacing: -1px;
+            cursor: pointer;
+            &:hover {
+                background-color: $seaColor;
+                border: 1px solid $seaColor;
+            }
+        }
     } 
 }
 
