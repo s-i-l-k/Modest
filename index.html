@@ -306,10 +306,12 @@
                         <form>
                             <div>
                                 <label for="name">Your name <br>
-                                    <input id="name" type="text" required>
+                                    <input id="name" type="text" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]{1,15}" required>
                                 </label>
                                 <label for="email">Your email <br>
-                                    <input id="email" type="email" required>
+                                    <input id="email" type="email" 
+                                    pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" 
+                                    title="Pole powinno zawierać poprawny adres email" required>
                                 </label>
                             </div>
                             <div>
@@ -318,7 +320,7 @@
                                 </label>
                             </div>    
                             <div>
-                                <button type="submit" class="sendBtn">Send message</button>       
+                                <button type="submit" id="sendBtn" class="sendBtn">Send message</button>       
                             </div>   
                         </form>
                 </div>  
