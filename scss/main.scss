@@ -101,7 +101,12 @@ $font3: "Socialico";
         font-family: $font2, sans-serif;
         position: absolute;
         top: 33%;
-        left: 11%;
+        padding-left: 11%;
+        padding-right: 11%;
+        @media (max-width: 991px) {
+            width: 90vw;
+            top: 15%;
+        }
         h2 {
             text-transform: uppercase;
             letter-spacing: -1.5px;
