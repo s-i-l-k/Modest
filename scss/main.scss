@@ -104,6 +104,7 @@ $font3: "Socialico";
         padding-top: 17%;
         padding-left: 10%;
         padding-right: 10%;
+        padding-bottom: 3%;
         @media (max-width: 991px) {
             width: 90vw;
             top: 15%;
@@ -468,6 +469,7 @@ $font3: "Socialico";
         line-height: 12vh;
         @media (max-width: 575px) {
             text-align: center;
+            font-size: 10px;
         }
     }
     .socials {
