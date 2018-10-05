@@ -306,12 +306,13 @@
                         <form>
                             <div>
                                 <label for="name">Your name <br>
-                                    <input id="name" type="text" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]{1,15}" required>
+                                    <input id="name" type="text" pattern="[A-Za-ząćęłńóśźżĄĆĘŁŃÓŚŹŻ]{1,15}" 
+                                    title="Pole powinno zawierać wyłącznie litery, do 15 znaków" required>
                                 </label>
                                 <label for="email">Your email <br>
                                     <input id="email" type="email" 
                                     pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" 
-                                    title="Pole powinno zawierać poprawny adres email" required>
+                                    title="Pole powinno zawierać poprawny adres email z @ i ." required>
                                 </label>
                             </div>
                             <div>
